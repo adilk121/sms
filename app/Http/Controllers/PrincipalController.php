@@ -17,6 +17,7 @@ class PrincipalController extends Controller
     public function createStudent(Request $request)
     {
         // dd($request->all());
+        // comments here
         $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:users',
