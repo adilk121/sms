@@ -11,7 +11,7 @@ use App\Models\Teacher;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-
+//All the links here
 class PrincipalController extends Controller
 {
     public function createStudent(Request $request)
