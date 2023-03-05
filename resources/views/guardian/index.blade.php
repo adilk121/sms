@@ -1,5 +1,6 @@
 @extends('layouts.wrapper')
 @section('content')
+//here is all section
 <div class="main-wrapper">
 <div class="header">
         <div class="header-left">
