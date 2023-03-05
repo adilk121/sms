@@ -1,5 +1,6 @@
 @extends('layouts.wrapper')
 @section('content')
+// content section
 <div class="main-wrapper login-body">
     <div class="login-wrapper">
         <div class="container">
