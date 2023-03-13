@@ -1,5 +1,4 @@
 <?php
-//model new
 namespace App\Http\Controllers;
 
 use App\Models\Guardian;
