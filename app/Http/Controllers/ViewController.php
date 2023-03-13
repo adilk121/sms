@@ -1,5 +1,4 @@
 <?php
-//Controller Program
 namespace App\Http\Controllers;
 
 use App\Models\Guardian;
