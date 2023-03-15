@@ -1,5 +1,6 @@
 <?php
 namespace App\Http\Controllers;
+//namespace for using url
 use App\Models\Guardian;
 use DB;
 use App\Models\StudentClass;
