@@ -1,4 +1,5 @@
 <?php
+//namespace
 namespace App\Http\Controllers;
 use App\Models\Guardian;
 use App\Models\Student;
