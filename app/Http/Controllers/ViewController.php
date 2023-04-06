@@ -7,7 +7,6 @@ use App\Models\Subject;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Mockery\Matcher\Subset;
-// All the modules here
 class ViewController extends Controller
 {
     public function index()
