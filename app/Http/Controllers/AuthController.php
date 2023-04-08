@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 class AuthController extends Controller
-{ //classs
+{ 
     public function logout()
     {
         auth()->logout();
