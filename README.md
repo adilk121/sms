@@ -1,31 +1,64 @@
-Instructions:
+<h1>Getting Started</h1>
+<h2>Prerequisites</h2>
+To run this project, you need to have the following installed on your system:
 
-Please change the following connection credentials in the folder of include/config Change the database name, server name, username, and password
+PHP 7.4 or later
+Composer
+MySQL
 
-Please change the following connection credentials in the folder of con.php (location: public directory) Change the database name, server name, username, and password
+<h2>Installing</h2>
 
-SQL file is located in the public directory with the name: sms_core.sql
+Clone the repository to your local machine:
+git clone https://github.com/adilk121/sms.git
 
-Accessing the dashboards:
+<h2>Install dependencies:</h2>
 
-After logging in the principal (admin) dashboard, create teacher, guardian, class, and subject(s), in this order.
-After creating the above users, create student and assign them the respective teacher, guardian, class, and subject(s).
-Additional features added:
+cd project-name
+composer install
 
-Principal can download a list of students with their details2.
-Each time a student is created, a welcome mail will be sent to their registered email ID of the respective user. Due to time constraints, it was not possible to implement this feature for guardians and teachers.
-In case a user forgets their password, they can reset it by selecting 'forgot password'. On clicking this, they will receive an email with OTP to reset their password.
-All additional features mentioned in the task document, except the grading system, have been incorporated.
-username & password:
+<h3>Create a new database and update the .env file with your database credentials:</h3>
 
-PRINCIPAL LOGIN admin admin@123
+DB_DATABASE=your_database_name
+DB_USERNAME=your_database_username
+DB_PASSWORD=your_database_password
 
-STUDENT LOGIN abc_12202 abc@1
+Run database migrations and seeders:
+php artisan migrate --seed
+Generate an application key:
 
-xyz_13483 xyz@1
+php artisan key:generate
+Start the development server:
 
-TEACHER LOGIN teach1934 t@123
-teach6704 t2@123
+php artisan serve
+Visit http://localhost:8000 in your browser to view the application.
 
-GUARDIAN LOGIN guard9786 g@123
-guard5864 g2@123
+<h2>Usage</h2>
+
+Login to the admin dashboard with the following credentials:
+
+Username: admin
+Password: admin@123
+Create teachers, guardians, classes, and subjects.
+
+Create students and assign them to a teacher, guardian, class, and subject(s).
+
+View and manage student details, attendance, and grades.
+
+<h2>Features</h2>
+
+Admin dashboard to manage teachers, guardians, classes, subjects, and students.
+Student dashboard to view attendance, grades, and download reports.
+Email notification to students on registration.
+Forgot password functionality with email OTP verification.
+CSV export of student details.
+Built With
+Laravel 8
+Bootstrap 5
+
+License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+
+
+
